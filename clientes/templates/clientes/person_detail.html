@@ -1,0 +1,16 @@
+Detalhes pessoa
+<br>
+
+{{ object.first_name }}
+<br>
+{{ object.photo }}
+
+
+
+<br>
+{{now}}
+<br>
+<br>
+<br>
+<a href="{% url 'person_update_cbv' object.pk %}" >Alterar</a>
+<a href="{% url 'person_delete_cbv' object.pk %}" >Remover</a>
